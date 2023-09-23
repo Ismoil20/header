@@ -22,7 +22,9 @@ ul {
 a {
   text-decoration: none;
 }
-
+button {
+  border: none;
+}
 nav {
   width: 100%;
   position: absolute;
@@ -172,4 +174,38 @@ h1 {
   font-style: normal;
   font-weight: 400;
   line-height: 109%;
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  .hero-top {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: start;
+  }
+  h1 {
+    font-size: 68px;
+    font-style: italic;
+    font-weight: 700;
+    line-height: 109%;
+    max-width: 608px;
+    text-align: start;
+  }
+  .hero-text p {
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 109%;
+    max-width: 608px;
+    text-align: start;
+  }
+  .hero-text button {
+    margin-right: 428px;
+  }
+  .hero-bottom {
+    gap: 64px;
+  }
 }
